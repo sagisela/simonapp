@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgruond">
+
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="279dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="SCORE:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHighScore"
+        android:layout_width="323dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="HIGH SCORE:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/TileW1P"
+        android:layout_width="58.7dp"
+        android:layout_height="300dp"
+        android:src="@drawable/white_tile_border"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412" />
+
+    <ImageView
+        android:id="@+id/TileW2P"
+        android:layout_width="58.7dp"
+        android:layout_height="300dp"
+        android:src="@drawable/white_tile_border"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/TileW1P"
+        app:layout_constraintStart_toEndOf="@+id/TileW1P"
+        app:layout_constraintTop_toTopOf="@+id/TileW1P" />
+
+    <ImageView
+        android:id="@+id/TileW3P"
+        android:layout_width="58.7dp"
+        android:layout_height="300dp"
+        android:src="@drawable/white_tile_border"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/TileW2P"
+        app:layout_constraintStart_toEndOf="@+id/TileW2P"
+        app:layout_constraintTop_toTopOf="@+id/TileW2P" />
+
+    <ImageView
+        android:id="@+id/TileW4P"
+        android:layout_width="58.7dp"
+        android:layout_height="300dp"
+        android:src="@drawable/white_tile_border"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/TileW3P"
+        app:layout_constraintStart_toEndOf="@+id/TileW3P"
+        app:layout_constraintTop_toTopOf="@+id/TileW3P" />
+
+    <ImageView
+        android:id="@+id/TileW5P"
+        android:layout_width="58.7dp"
+        android:layout_height="300dp"
+        android:src="@drawable/white_tile_border"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/TileW4P"
+        app:layout_constraintStart_toEndOf="@+id/TileW4P"
+        app:layout_constraintTop_toTopOf="@+id/TileW4P" />
+
+    <ImageView
+        android:id="@+id/TileW6P"
+        android:layout_width="58.7dp"
+        android:layout_height="300dp"
+        android:src="@drawable/white_tile_border"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/TileW5P"
+        app:layout_constraintStart_toEndOf="@+id/TileW5P"
+        app:layout_constraintTop_toTopOf="@+id/TileW5P" />
+
+    <ImageView
+        android:id="@+id/TileW7P"
+        android:layout_width="58.7dp"
+        android:layout_height="300dp"
+        android:src="@drawable/white_tile_border"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/TileW6P"
+        app:layout_constraintStart_toEndOf="@+id/TileW6P"
+        app:layout_constraintTop_toTopOf="@+id/TileW6P" />
+
+    <ImageView
+        android:id="@+id/TileB1P"
+        android:layout_width="40dp"
+        android:layout_height="190dp"
+        android:src="@drawable/black_tile_border"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="@+id/TileW2P"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/TileW1P"
+        app:layout_constraintTop_toTopOf="@+id/TileW1P" />
+
+    <ImageView
+        android:id="@+id/TileB2P"
+        android:layout_width="40dp"
+        android:layout_height="190dp"
+        android:src="@drawable/black_tile_border"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/TileB1P"
+        app:layout_constraintEnd_toEndOf="@+id/TileW3P"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toEndOf="@+id/TileW1P"
+        app:layout_constraintTop_toTopOf="@+id/TileW2P"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/TileB3P"
+        android:layout_width="40dp"
+        android:layout_height="190dp"
+        android:src="@drawable/black_tile_border"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/TileB2P"
+        app:layout_constraintEnd_toEndOf="@+id/TileW5P"
+        app:layout_constraintStart_toEndOf="@+id/TileW3P"
+        app:layout_constraintTop_toTopOf="@+id/TileW4P" />
+
+    <ImageView
+        android:id="@+id/TileB4P"
+        android:layout_width="40dp"
+        android:layout_height="190dp"
+        android:src="@drawable/black_tile_border"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/TileB3P"
+        app:layout_constraintEnd_toEndOf="@+id/TileW6P"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/TileW4P"
+        app:layout_constraintTop_toTopOf="@+id/TileW5P"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/TileB5P"
+        android:layout_width="40dp"
+        android:layout_height="190dp"
+        android:src="@drawable/black_tile_border"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/TileB4P"
+        app:layout_constraintEnd_toEndOf="@+id/TileW7P"
+        app:layout_constraintStart_toEndOf="@+id/TileW5P"
+        app:layout_constraintTop_toTopOf="@+id/TileW6P" />
+
+    <TextView
+        android:id="@+id/tvWatch"
+        android:layout_width="411dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="72dp"
+        android:fontFamily="@font/black_ops_one"
+        android:gravity="center_horizontal"
+        android:text="WATCH!"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRepeat"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="72dp"
+        android:fontFamily="@font/black_ops_one"
+        android:gravity="center_horizontal"
+        android:text="REPEAT!"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

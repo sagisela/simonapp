@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_logout"
+        android:title="Log Out"
+        android:orderInCategory="400"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_classicGame"
+        android:title="Classic Game"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+        />
+
+
+    <item
+        android:id="@+id/action_GameHistory"
+        android:title="Game History"
+        android:orderInCategory="350"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_MainMenu"
+        android:title="Main Menu"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+
+</menu>
